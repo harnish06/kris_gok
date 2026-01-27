@@ -4,7 +4,7 @@ function playmusic(){
 }
 
 function lastpage(){
-    window.location.href="HBD2.HTML"
+    window.location.href="HBD2.html"
 }
 
 // letter starts
@@ -173,7 +173,7 @@ document.getElementById("DF").style.fontSize="25px"
 
 // kris ends
 function goleft(){
-    window.location.href="HBD2.HTML";
+    window.location.href="HBD2.html";
 }
 
 

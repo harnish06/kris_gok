@@ -1,5 +1,5 @@
 function firstpage(){
-    window.location.href="HBD3.HTML"
+    window.location.href="HBD3.html"
 }
 
 // blow
@@ -118,17 +118,17 @@ typeWriter();
 });
 
 function goleft(){
-    window.location.href="HBD4.HTML";
+    window.location.href="HBD4.html";
 }
 
 function goright(){
-    window.location.href="HBD3.HTML";
+    window.location.href="HBD3.html";
 }
 
 function bottomLeft(){
-  window.location.href = "HBD3.HTML";
+  window.location.href = "HBD3.html";
 }
 
 function bottomRight(){
-  window.location.href = "HBD4.HTML";
+  window.location.href = "HBD4.html";
 }

@@ -25,7 +25,7 @@ const timer = setInterval(() => {
     timeleft--;
     if (timeleft < 0) {
         clearInterval(timer);
-        window.location.href = "HBD2.HTML"
+        window.location.href = "HBD2.html"
     }
 }, 1000);
 
