@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+/* Use Dancing Script for this page */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+body, html { font-family: 'Dancing Script', cursive; }
+
 #bgvideo {
     position: fixed;
     top: 0%;
