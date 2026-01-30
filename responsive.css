@@ -39,3 +39,51 @@ body { font-family: 'Dancing Script', cursive; }
   .GK, .KG { width: 64px; }
   #countdown, #dateTime { font-size: 18px; }
 }
+
+/* Stronger mobile overrides to neutralize fixed desktop layout and improve usability */
+@media (max-width: 820px) {
+  html, body { height: auto; overflow-x: hidden; }
+
+  /* Reduce or disable heavy animated decorations */
+  .confetti-wrapper, .blast-container, .blast, .pops, .left-img, .right-img { display: none !important; }
+
+  /* Make floating images small and attach to corners */
+  .GK { position: fixed !important; top: 12px !important; right: 12px !important; left: auto !important; width: 64px !important; height: auto !important; padding: 6px !important; }
+  .KG { position: fixed !important; top: 12px !important; left: 12px !important; right: auto !important; width: 64px !important; height: auto !important; padding: 6px !important; }
+
+  /* Make main container flow naturally and center content */
+  .container { position: relative !important; margin: 90px auto 20px; padding: 0 12px; text-align: center; }
+  .cd { position: static !important; margin: 8px auto; font-size: 20px; color: #D2691E; }
+  #countdown, #dateTime { position: static !important; margin: 4px auto; font-size: 20px; }
+
+  /* Stack and reduce letter sizes */
+  .birthday-wrap, .prema { position: relative !important; top: auto !important; left: auto !important; width: 100% !important; display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 6px; }
+  .birthday-wrap span, .prema span { font-size: 28px !important; transform: none !important; opacity: 1 !important; }
+
+  /* Hearts and photo layouts — center and scale down */
+  .heart, .heart-left, .heart-right, .heart-bot { position: relative !important; left: auto !important; right: auto !important; top: auto !important; margin: 12px auto !important; width: 120px !important; height: 120px !important; }
+  .heart-img, .photo img, .KL, .KP, .KQ { max-width: 90vw !important; height: auto !important; margin: 8px auto !important; display: block !important; }
+
+  /* Fix SVG and clip images */
+  svg, image { max-width: 100% !important; height: auto !important; }
+
+  /* Make interactive buttons/taps larger */
+  button, #surpriseBtn, #onelast { padding: 12px 18px !important; font-size: 16px !important; }
+
+  /* Reduce heavy desktop offsets used in other CSS */
+  [style*="left:"] { left: auto !important; }
+  [style*="right:"] { right: auto !important; }
+  [style*="top:"] { top: auto !important; }
+
+  /* Keep background video full-bleed but behind content */
+  #bgvideo { position: fixed !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; width: 120vw !important; height: 120vh !important; object-fit: cover !important; z-index: -2 !important; }
+}
+
+@media (max-width: 420px) {
+  /* Extra-small phones */
+  .birthday-wrap span, .prema span { font-size: 20px !important; }
+  .GK, .KG { width: 56px !important; }
+  #countdown, #dateTime { font-size: 16px !important; }
+  .heart, .heart-img { width: 100px !important; height: 100px !important; }
+}
+
