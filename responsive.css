@@ -4,6 +4,41 @@
 /* Apply Dancing Script site-wide (overrides existing fonts) */
 body { font-family: 'Dancing Script', cursive; }
 
+/* Color variables for attractive mixed colors */
+:root {
+  --accent-1: #ff4da6; /* pink */
+  --accent-2: #ffd700; /* gold */
+  --accent-3: #00eaff; /* cyan */
+  --accent-4: #9b5cff; /* purple */
+  --text-base: #ffffff;
+}
+
+/* Multi-color gradient text utility */
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3), var(--accent-4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* Multi-accent inline spans for mixed-color words */
+.multi-accent span { display: inline-block; }
+.multi-accent span:nth-child(1){ color: var(--accent-1); }
+.multi-accent span:nth-child(2){ color: var(--accent-2); }
+.multi-accent span:nth-child(3){ color: var(--accent-3); }
+.multi-accent span:nth-child(4){ color: var(--accent-4); }
+
+/* Apply gradient to important headings and decorative text */
+.birthday-wrap span, .prema span, .cd, h1, .text h1, .text h2 { color: var(--text-base); }
+.birthday-wrap span.gradient, .prema span.gradient, .cd.gradient, h1.gradient { background: none; }
+.birthday-wrap span, .prema span { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); }
+
+/* Apply gradient class to birthday letters via JS-friendly class */
+.birthday-wrap span.gradient-text, .prema span.gradient-text, .cd.gradient-text, h1.gradient-text { color: transparent; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+
 @media (max-width: 768px) {
   body { font-size: 16px; }
 
