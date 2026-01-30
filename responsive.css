@@ -1,8 +1,8 @@
 /* Responsive overrides for mobile devices - non-destructive */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-/* Apply Montserrat site-wide (overrides existing fonts) */
-body { font-family: 'Montserrat', sans-serif; }
+/* Apply Dancing Script site-wide (overrides existing fonts) */
+body { font-family: 'Dancing Script', cursive; }
 
 @media (max-width: 768px) {
   body { font-size: 16px; }
