@@ -11,7 +11,7 @@ setInterval(() => {
     document.getElementById("dateTime").innerHTML = now.toDateString() + " | " + now.toLocaleTimeString();
 }, 1000);
 
-let timeleft = 7;
+let timeleft = 10;
 
 const timer = setInterval(() => {
     document.getElementById("countdown").innerHTML = timeleft;
