@@ -1,4 +1,9 @@
 /* Responsive overrides for mobile devices - non-destructive */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+/* Apply Montserrat site-wide (overrides existing fonts) */
+body { font-family: 'Montserrat', sans-serif; }
+
 @media (max-width: 768px) {
   body { font-size: 16px; }
 
