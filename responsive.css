@@ -87,3 +87,41 @@ body { font-family: 'Dancing Script', cursive; }
   .heart, .heart-img { width: 100px !important; height: 100px !important; }
 }
 
+/* Final aggressive mobile compatibility overrides (applies only on very small screens) */
+@media (max-width: 480px) {
+  /* basic page flow */
+  html, body { width: 100% !important; height: auto !important; overflow-x: hidden !important; }
+
+  /* hide decorative/overflow elements */
+  .confetti-wrapper, .blast-container, .blast, .pops, .left-img, .right-img, .pops-left, .pops-right, .blast-left, .blast-right { display: none !important; }
+
+  /* convert fixed/absolute elements into normal flow */
+  .GK, .KG, .KK, .KO, .KM, .KL, .KP, .KQ, .photo, .letter-wrapper, .container, .cake, .heart-container, .heart, .prema, .birthday-wrap { position: relative !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; margin: 8px auto !important; transform: none !important; }
+
+  /* disable animations and heavy transforms */
+  * { animation: none !important; transition: none !important; }
+
+  /* neutralize clip paths and masks */
+  .heart, .heart-img, svg, clipPath, image { clip-path: none !important; -webkit-clip-path: none !important; mask: none !important; }
+
+  /* responsive media */
+  img, video, svg, .heart-img, .photo img { max-width: 94vw !important; width: auto !important; height: auto !important; display: block !important; margin: 8px auto !important; }
+
+  /* center and scale headings/letters */
+  .birthday-wrap, .prema { display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; gap: 6px !important; width: 100% !important; padding: 6px 8px !important; }
+  .birthday-wrap span, .prema span { font-size: 20px !important; line-height: 1 !important; }
+
+  /* make CTA and buttons tappable */
+  button, .container, .letter-wrapper, #surpriseBtn, #onelast { width: auto !important; padding: 12px 16px !important; font-size: 16px !important; }
+
+  /* ensure background video stays behind and doesn't shift layout */
+  #bgvideo { position: fixed !important; inset: 0 !important; width: 100% !important; height: 100% !important; object-fit: cover !important; z-index: -3 !important; }
+
+  /* remove inline pixel offsets that break small screens */
+  [style*="left:"] { left: auto !important; }
+  [style*="right:"] { right: auto !important; }
+  [style*="top:"] { top: auto !important; }
+  [style*="bottom:"] { bottom: auto !important; }
+}
+
+
