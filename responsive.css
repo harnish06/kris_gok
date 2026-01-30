@@ -1,0 +1,36 @@
+/* Responsive overrides for mobile devices - non-destructive */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+
+  /* Make fixed floating images smaller and pin them to corners */
+  .GK, .KG { position: fixed; top: 16px; width: 80px; height: auto; padding: 6px; right: 12px; left: auto; border-radius: 50%; }
+  .KG { left: 12px; right: auto; }
+
+  /* Center main content and countdown */
+  .cd { position: static; top: auto; right: auto; margin: 120px auto 8px; font-size: 20px; }
+  #dateTime, #countdown { position: static; margin: 8px auto; font-size: 20px; }
+
+  /* Reduce title sizes and stack letters */
+  .birthday-wrap, .prema { position: static; top: auto; left: auto; width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+  .birthday-wrap span, .prema span { font-size: 32px; transform: none; opacity: 1; }
+
+  /* Make hearts and images responsive */
+  .heart, .heart-img { width: 130px !important; height: 130px !important; left: auto !important; right: auto !important; top: auto !important; }
+
+  /* General containers */
+  .container { padding: 12px; }
+  .photo img, .heart-img, img { max-width: 90vw; height: auto; object-fit: cover; }
+
+  /* SVG and overlays should not overflow on mobile */
+  svg { max-width: 100%; height: auto; }
+
+  /* Disable heavy fixed offsets used for desktop layouts */
+  [style*="left:"] { left: auto !important; }
+  [style*="right:"] { right: auto !important; }
+}
+
+@media (max-width: 420px) {
+  .birthday-wrap span, .prema span { font-size: 24px; }
+  .GK, .KG { width: 64px; }
+  #countdown, #dateTime { font-size: 18px; }
+}
