@@ -2,6 +2,17 @@ function firstpage() {
     window.location.href = "HBD3.html"
 }
 
+window.addEventListener("load", () => {
+    const music = document.getElementById("bgMusic");
+        music.volume=0.6;
+
+    setTimeout(() => {
+        music.play().catch(() =>{
+            console.log("Autoplay blocked");
+         });
+    },500);
+});
+
 // blow
 
 setTimeout(() => {
