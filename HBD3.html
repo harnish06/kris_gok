@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Happy Brithday</title>
-        <link rel="stylesheet" href="HBD3.css">
-    </head>
-    <body>
-        <video id="bgvideo" autoplay muted loop>
+
+<head>
+    <title>Happy Brithday</title>
+    <link rel="stylesheet" href="HBD3.css">
+</head>
+
+<body>
+    <video id="bgvideo" autoplay muted loop>
             <source src="video/BG Gokzz.mp4" type="video/mp4">
         </video>
 
-        <audio id="bgMusic" loop>
+    <audio id="bgMusic" loop>
             <source src="music/01_VAA~1.MP3" type="audio/mpeg">
         </audio>
 
-    
+
     <div class="confetti-wrapper"></div>
 
-<div class="blast-container">
-    <div class="blast-left"></div>
-    <div class="blast-right"></div>
-</div>
+    <div class="blast-container">
+        <div class="blast-left"></div>
+        <div class="blast-right"></div>
+    </div>
 
     <!-- cake contain start -->
 
-<div>
+    <div>
         <div class="cake">
-        <div class="fuego"></div>
-        <div class="fuego"></div>
-        <div class="fuego"></div>
-        <div class="fuego"></div>
-        <div class="fuego"></div>
-        <div class="smoke"></div>
-      </div>
-      <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="smoke"></div>
+        </div>
+        <svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
         <path fill="#a88679" d="M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
         c44.697,0,96.586,0,147.334,0C177.667-29.942,177.668-13.94,173.667-13.94z">
             <animate id="bizcocho_3" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="relleno_2.end" dur="0.3s" fill="freeze" values="
@@ -181,54 +183,50 @@
         <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
       </svg>
 
-      <div class="text">
-      <h1>happy birthday!</h1>
-      <p class="name">Lovie</p>
-      </div>
+        <div class="text">
+            <h1>happy birthday!</h1>
+            <p class="name">Lovie</p>
+        </div>
     </div>
 
-     <!-- cake contain end -->
+    <!-- cake contain end -->
 
-<div>
-    <div class="blast blast-left">
-        <span></span><span></span><span></span><span></span><span></span>
+    <div>
+        <div class="blast blast-left">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="blast blast-right">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
     </div>
-    <div class="blast blast-right">
-        <span></span><span></span><span></span><span></span><span></span>
-    </div>
-</div>
 
-<div class="heart-container">
-<div>
-     <div class="heart heart-left" onclick="goleft()"> 
-        <img src="image/GK 29.jpg" class="heart-img left-img">
-      </div> 
+    <div class="heart-container">
+        <div>
+            <div class="heart heart-left" onclick="goleft()">
+                <img src="image/GKS 51.jpg" class="heart-img left-img">
+            </div>
 
-      <div class="heart heart-right" onclick="goright()">
-         <img src="image/GKS 41.png" class="heart-img right-img">   
-      <div>
-</div>
-</div>
-<!-- typ -->
-<div>
-    <p id="loveText"></p>
-</div> 
-   <!-- typ  -->
+            <div class="heart heart-right" onclick="goright()">
+                <img src="image/GKS 41.png" class="heart-img right-img">
+                <div>
+                </div>
+            </div>
+            <!-- typ -->
+            <div>
+                <p id="loveText"></p>
+            </div>
+            <!-- typ  -->
 
+            <div class="popup">
+                <button id="onelast" onclick="openpopup()">One Last Time</button>
+            </div>
 
-<div>
-    <p id="loveCounter"></p>
-</div>
+            <div class="popout" id="popout">
+                <h2>happy birthday dii<br>BYE<br>
+                    <button class="close" onclick="closepop()">ok</button>
+            </div>
+            <div class="container" onclick="playmusic()"></div>
+            <script src="HBD3.js"></script>
+</body>
 
-<div class="popup">
-    <button id="onelast" onclick="openpopup()">One Last Time</button>
-</div>
-
-<div class="popout" id="popout">
-    <h2>happy birthday dii<br>
-        <button class="close" onclick="closepop()">ok</button>
-</div>
-    <div class="container" onclick="playmusic()"></div>
-    <script src="HBD3.js"></script> 
-    </body>
 </html>
