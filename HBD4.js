@@ -11,9 +11,8 @@ function lastpage() {
 
 const text = `❤️ Love You Always ❤️
 
-Nee sirikkum pothu
 Apo Apo un msg vandhaa
-day konjam bettem-aa pogum 😌`;
+day konjam better-aa pogum 😌`;
 
 let i = 0;
 let speed = 90; 
