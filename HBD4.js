@@ -15,7 +15,7 @@ Nee sirikkum pothu
 En world azhagaaguthu 😌`;
 
 let i = 0;
-let speed = 90; // typing speed (kammi = fast)
+let speed = 90; 
 
 function typeWriter() {
     if (i < text.length) {
@@ -97,7 +97,7 @@ typeline();
 document.getElementById("KI").style.position = "absolute"
 document.getElementById("KI").style.right = "400px"
 document.getElementById("KI").style.top = "70px"
-document.getElementById("KI").style.color = "#43de0f"
+document.getElementById("KI").style.color = "#0e21ea"
 document.getElementById("KI").style.fontSize = "25px"
 
 // MU
@@ -106,7 +106,7 @@ document.getElementById("KI").style.fontSize = "25px"
 document.getElementById("MU").style.position = "absolute"
 document.getElementById("MU").style.right = "330px"
 document.getElementById("MU").style.top = "105px"
-document.getElementById("MU").style.color = "#43de0f"
+document.getElementById("MU").style.color = "#0e21ea"
 document.getElementById("MU").style.fontSize = "25px"
 
 // PP
@@ -115,7 +115,7 @@ document.getElementById("MU").style.fontSize = "25px"
 document.getElementById("PP").style.position = "absolute"
 document.getElementById("PP").style.right = "310px"
 document.getElementById("PP").style.top = "145px"
-document.getElementById("PP").style.color = "#43de0f"
+document.getElementById("PP").style.color = "#0e21ea"
 document.getElementById("PP").style.fontSize = "25px"
 
 
@@ -156,19 +156,19 @@ typecontent();
 document.getElementById("AS").style.position = "absolute"
 document.getElementById("AS").style.left = "50px"
 document.getElementById("AS").style.top = "210px"
-document.getElementById("AS").style.color = "#43de0f"
+document.getElementById("AS").style.color = "#0e21ea"
 document.getElementById("AS").style.fontSize = "25px"
 
 document.getElementById("SD").style.position = "absolute"
 document.getElementById("SD").style.left = "80px"
 document.getElementById("SD").style.top = "250px"
-document.getElementById("SD").style.color = "#43de0f"
+document.getElementById("SD").style.color = "#0e21ea"
 document.getElementById("SD").style.fontSize = "25px"
 
 document.getElementById("DF").style.position = "absolute"
 document.getElementById("DF").style.left = "90px"
 document.getElementById("DF").style.top = "300px"
-document.getElementById("DF").style.color = "#43de0f"
+document.getElementById("DF").style.color = "#0e21ea"
 document.getElementById("DF").style.fontSize = "25px"
 
 // kris ends
